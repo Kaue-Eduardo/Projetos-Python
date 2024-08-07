@@ -25,5 +25,5 @@ if (idade > 14) and (idade <= 19):
 if (idade > 19) and (idade <= 20):
     print('SÊNIOR')
 
-if idade >= 20:
+if idade > 20:
     print('MASTER')
