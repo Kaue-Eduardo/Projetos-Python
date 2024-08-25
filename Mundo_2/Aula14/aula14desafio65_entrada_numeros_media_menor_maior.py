@@ -5,6 +5,7 @@
 loop = 1
 quantidade_num = 0
 soma_num = 0
+# O valor 'None' pode ser usado quando vamos fazer comparação de valores, como não sabemos o primeiro valor, esse valor vai assumir o primeiro valor digitado
 maior = None
 menor = None
 
