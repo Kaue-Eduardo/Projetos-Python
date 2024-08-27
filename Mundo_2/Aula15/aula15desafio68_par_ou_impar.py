@@ -1,7 +1,7 @@
 # Esse programa irá jogar par ou impar com o usuário, quando o usuário perder o programa será encerrado
 
 # Biblioteca para o computador escolher par ou ímpar
-from random import choice
+from random import randint
 
 # Variáveis de controle
 vitorias = 0
@@ -10,34 +10,30 @@ vitorias = 0
 while True:
 
     # Escolha do computador
-    computador = choice(['par', 'impar'])
+    computador = randint(0, 10)
 
     # Escolha do usuário
-    usuario = int(input('\nOpções:\n1 - Par\n2 - Ímpar\nSua escolha: '))
+    valor_usuario = int(input('\nDigite o valor que deseja jogar: '))
+    usuario = int(input('Opções:\n1 - Par\n2 - Ímpar\nSua escolha: '))
 
     # Condição de vitória se for par
     if usuario == 1:
-        if computador == 'par':
-            print('\nVocê: Par\nComputador: Par')
+        if (valor_usuario + computador) % 2 == 0:
             print('Você ganhou!!!')
             vitorias += 1
 
-        elif computador == 'impar':
-            print('\nVocê: Par\nComputador: Impar')
+        else:
             print('Você perdeu!!!')
             print(f'Você teve {vitorias} vitorias consecutivas')
             break
 
     # Condição de vitória se for ímpar
     if usuario == 2:
-        if computador == 'par':
-            print('\nVocê: Impar\nComputador: par')
-            print('Você perdeu!!!')
-            print(f'Você teve {vitorias} vitorias consecutivas')
-            break
-
-        elif computador == 'impar':
-            print('\nVocê: Impar\nComputador: Impar')
+        if (valor_usuario + computador) % 2 != 0:
             print('Você ganhou!!!')
             vitorias += 1
 
+        else:
+            print('Você perdeu!!!')
+            print(f'Você teve {vitorias} vitorias consecutivas')
+            break

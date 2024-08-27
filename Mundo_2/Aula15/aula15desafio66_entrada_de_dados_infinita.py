@@ -8,10 +8,10 @@ soma = 0
 while True:
 
     # Entrada dos dados
-    dados = int(input('Digite um número para somar ou QUALQUER negativo para parar: '))
+    dados = int(input('Digite um número para somar ou 999 para parar: '))
 
     # Condição para somar os valores e a quantidade de iterações
-    if dados > 0:
+    if dados != 999:
         soma += dados
         contador += 1
 

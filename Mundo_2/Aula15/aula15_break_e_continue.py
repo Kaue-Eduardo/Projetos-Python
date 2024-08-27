@@ -8,7 +8,6 @@ while True:
 
     # Bloco para mostrar qual o número da iteração, quantas vezes o laço foi executado!
     contador += 1
-    # Mostra o valor da iteração
     print(f'Execução número: {contador}')
 
     # Interrupção do laço, aqui poderia ser alguma entrada específica pelo lado do usuário!

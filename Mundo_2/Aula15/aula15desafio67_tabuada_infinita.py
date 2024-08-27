@@ -3,17 +3,14 @@
 # Laço infinito
 while True:
     # Entrada do usuário
-    num = int(input('Digite o número que deseja saber a tabuáda ou QUALQUER negativo para encerrar: '))
+    num = int(input('Digite qual número deseja saber a tabuáda ou QUALQUER negativo para encerrar: '))
 
     # Condição quer verifica se o número é positivo para continuar ou negativo para parar
     if num >= 0:
 
-        # Variável para armazenar a quantidade de iterações
-        iteracao = 1
+        for i in range(1, 11):
+            print(f'{num} x {i} = {num * i}')
 
-        while iteracao <= 10:
-            print(f'{num} x {iteracao} = {num * iteracao}')
-            iteracao += 1
     else:
         print('Fim do programa!')
         break
