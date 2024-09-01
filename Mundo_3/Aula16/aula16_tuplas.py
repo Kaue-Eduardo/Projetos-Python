@@ -1,4 +1,4 @@
-# Tuplas são variáveis compostas IMUTÁVEIS (uma vez criada, não pode ser alterada)
+# Tuplas são variáveis compostas IMUTÁVEIS (uma vez criada, não pode ser alterada, apenas excluída e recriada)
 
 # Inicializando uma tupla
 tupla1 = ('Moto', 'Velocidade', 'Potência', 'Adrenalina')
