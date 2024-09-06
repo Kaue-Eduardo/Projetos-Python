@@ -8,7 +8,7 @@ extenso = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oi
 while True:
 
     # Variável para receber o valor que deseja por extenso
-    num = int(input('Digite um número para tê-lo por extenso: '))
+    num = int(input('Digite um número para obtê-lo por extenso: '))
 
     # Validando se o número é válido
     if 0 <= num <= 20:
