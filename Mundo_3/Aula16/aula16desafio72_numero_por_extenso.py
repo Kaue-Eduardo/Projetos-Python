@@ -14,5 +14,6 @@ while True:
     if 0 <= num <= 20:
         print(f'O número {num} por extenso é: {extenso[num]}')
 
+    # Se não for um dado válido o programa mostra uma menssagem de erro e retorna a pergunta sobre o número desejado       
     else:
         print('Número inválido! Tente novamente!')
