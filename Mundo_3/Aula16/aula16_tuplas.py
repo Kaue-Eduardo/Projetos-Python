@@ -3,6 +3,9 @@
 # Inicializando uma tupla
 tupla1 = ('Moto', 'Velocidade', 'Potência', 'Adrenalina')
 
+# Mostrando posição de um elemento na lista
+print(tupla1.index('Velocidade'))
+
 # Mostrando um elemento específico
 print(tupla1[2])
 
@@ -15,7 +18,7 @@ print(tupla1[-2:])
 # Possibilidade de ordenação de tupla, nesse caso alfabética, ele NÃO altera, apenas mostra na ordem
 print(sorted(tupla1))
 
-# Estrutura de repetição
+# Estrutura de repetição / loop
 # Tipo 1
 for i in range(0, len(tupla1)):
     print(f'Vantagens de uma moto: {tupla1[i]}')
