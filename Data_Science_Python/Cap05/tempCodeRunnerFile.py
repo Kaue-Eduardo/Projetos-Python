@@ -1,0 +1,1 @@
+'Aprovado' if v > 70 else 'Reprovado'
