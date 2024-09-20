@@ -24,6 +24,11 @@ Lista.insert(0, item)
 # Mostrando o resultado
 print(Lista)
 
+# Copiar lista
+# Nova variável = método para copiar, usar a lista como parâmetro com o símbolo '[:]'
+recebendo_lista = Lista[:]
+
+
 # DELETAR
 del Lista[1] # básico
 
