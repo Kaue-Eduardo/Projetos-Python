@@ -35,9 +35,15 @@ del Lista[1] # básico
 Lista.pop(1) # função por índice
 Lista.pop() # elimina a última posição
 
-Lista.remove('para_teste') # função pelo conteúdo
+recebendo_lista.remove('para_teste') # função pelo conteúdo
+
+print(recebendo_lista)
 
 # ORGANIZAR
+
+# Função que a cada iteração traz tanto o conteúdo quanto o índice
+for indice, valor in enumerate(recebendo_lista):
+    print(f'{indice, valor}')
 
 # Ordem crescente ou alfabética
 lista.sort()
