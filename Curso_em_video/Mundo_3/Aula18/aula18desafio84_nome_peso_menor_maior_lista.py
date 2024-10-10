@@ -4,8 +4,6 @@
 qntd_pessoas = 0
 pessoas = []
 infos = []
-pessoas_pesadas = []
-pessoas_leves = []
 
 while True:
 
@@ -23,9 +21,13 @@ while True:
     elif opcao == 'n':
 
         maior_peso = max(pessoa[1] for pessoa in pessoas)
+        menor_peso = min(pessoa[1] for pessoa in pessoas)
 
-        print(f'O maior peso foi {max(pessoas[][1])} da(as) pessoa(as): ')
+        pessoas_pesadas = [pessoa[0] for pessoa in pessoas if pessoa[1] == maior_peso]
+        pessoas_leves = [pessoa[0] for pessoa in pessoas if pessoa[1] == menor_peso]
 
+        print(f'O maior peso foi {maior_peso} Kg da(as) pessoa(as): {pessoas_pesadas}')
+        print(f'O maior peso foi {menor_peso} Kg da(as) pessoa(as): {pessoas_leves}')
 
         print(f'Foram cadastradas {qntd_pessoas} pessoas!')
 
@@ -34,4 +36,3 @@ while True:
 
     else:
         print('Opção inválida, tente novamente!')
-
